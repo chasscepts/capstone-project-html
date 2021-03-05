@@ -1,0 +1,59 @@
+.text-dark,
+.hover-dark:hover {
+  color: #272a31;
+}
+
+.bg-dark {
+  background-color: #272a31;
+}
+
+.hover-dark:hover {
+  color: #272a31;
+}
+
+.text-primary,
+.hover-primary:hover {
+  color: #ec5242;
+}
+
+.bg-primary {
+  background-color: #ec5242;
+}
+
+.hover-primary:hover {
+  color: #ec5242;
+}
+
+.text-secondary,
+.hover-secondary:hover {
+  color: #d3d3d3;
+}
+
+.bg-secondary {
+  background-color: #d3d3d3;
+}
+
+.hover-secondary:hover {
+  color: #d3d3d3;
+}
+
+.clip {
+  position: absolute;
+  -webkit-clip-path: circle(1);
+          clip-path: circle(1);
+  color: transparent;
+}
+
+.d-none {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .d-md-none {
+    display: none;
+  }
+  .d-md-block {
+    display: block;
+  }
+}
+/*# sourceMappingURL=style.css.map */

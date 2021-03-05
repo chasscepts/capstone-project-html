@@ -1,3 +1,68 @@
 $color-dark: #272a31;
 $color-primary: #ec5242;
-$color-muted: #d3d3d3;
+$color-secondary: #d3d3d3;
+
+$colors: (
+  'dark': $color-dark,
+  'primary': $color-primary,
+  'secondary': $color-secondary
+);
+
+$break-points: (
+  md: 768px,
+  lg: 992px,
+  xl: 1024px
+);
+
+@mixin media-break($break-point: md) {
+  $width: map-get($break-points, $break-point);
+  $break: if($width, $width, 768px);
+  @media (min-width: $break) {
+    @content;
+  }
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@each $key, $color in $colors {
+  .text-#{$key},
+  .hover-#{$key}:hover {
+    color: $color;
+  }
+
+  .bg-#{$key} {
+    background-color: $color;
+  }
+
+  .hover-#{$key}:hover {
+    color: $color;
+  }
+}
+
+.clip {
+  position: absolute;
+  clip-path: circle(1);
+  color: transparent;
+}
+
+.d-none {
+  display: none;
+}
+
+@include media-break(md) {
+  .d-md-none {
+    display: none;
+  }
+
+  .d-md-block {
+    display: block;
+  }
+}
