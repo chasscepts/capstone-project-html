@@ -7,6 +7,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
   <link href="//db.onlinewebfonts.com/c/d14035f6b1afeabafbee4abb2ebf0fc6?family=COCOGOOSE" rel="stylesheet" type="text/css"/>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
   <link rel="stylesheet" type="text/css" href="reset.css">
   <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="stylesheet" type="text/css" href="hamburger.css">
@@ -17,22 +19,24 @@
     <h1 class="clip">Home Page</h1>
     <nav class="d-none d-md-block">
       <h2 class="clip">Main Menu</h2>
-      <ul>
-        <li><a class="text-white header-top-menu-option" href="#">facebook icon</a></li>
-        <li><a class="text-white header-top-menu-option" href="#">twittter icon</a></li>
-        <li><a class="text-white header-top-menu-option" href="#">English</a></li>
-        <li><a class="text-white header-top-menu-option" href="#">My Page</a></li>
-        <li><a class="text-white header-top-menu-option" href="#">Logout</a></li>
-      </ul>
-      <div>
-        <a class="bottom-menu-option logo-menu-option" href="/">Logo</a>
-        <ul>
-          <li><a class="text-secondary hover-primary header-bottom-menu-option" href="#">About</a></li>
-          <li><a class="text-secondary hover-primary header-bottom-menu-option" href="#">Program</a></li>
-          <li><a class="text-secondary hover-primary header-bottom-menu-option" href="#">Join</a></li>
-          <li><a class="text-secondary hover-primary header-bottom-menu-option" href="#">Sponsor</a></li>
-          <li><a class="text-secondary hover-primary header-bottom-menu-option" href="#">News</a></li>
-          <li><a class="text-secondary hover-primary header-bottom-menu-option" href="#">CC Campain</a></li>
+      <div class="bg-dark">
+        <ul class="d-flex justify-content-end container-md text-white header-menu-dark">
+          <li><a class="text-white header-top-menu-option" href="#"><i class="fab fa-facebook"  aria-hidden="true"></i></a></li>
+          <li><a class="text-white header-top-menu-option" href="#"><i class="fab fa-twitter"></i></a></li>
+          <li><a class="text-muted header-top-menu-option" href="#">English</a></li>
+          <li><a class="text-muted header-top-menu-option" href="#">My Page</a></li>
+          <li><a class="text-muted  header-top-menu-option" href="#">Logout</a></li>
+        </ul>
+      </div>
+      <div class="container-md d-flex justify-content-between align-items-center">
+        <a class="bottom-menu-option logo-menu-option" href="/"><img alt="logo" src="/assets/images/lekside.jpg"></a>
+        <ul class="d-flex align-items-center text-secondary header-menu-light">
+          <li><a class="text-primary hover-dark header-bottom-menu-option" href="#">About</a></li>
+          <li><a class="hover-primary header-bottom-menu-option" href="#">Program</a></li>
+          <li><a class="hover-primary header-bottom-menu-option" href="#">Join</a></li>
+          <li><a class="hover-primary header-bottom-menu-option" href="#">Sponsor</a></li>
+          <li><a class="hover-primary header-bottom-menu-option" href="#">News</a></li>
+          <li class="campaign"><a class="text-primary hover-dark header-bottom-menu-option" href="#">CC Campaign</a></li>
         </ul>
       </div>
     </nav>
@@ -48,10 +52,12 @@
   </header>
   <main>
     <section class="home-intro">
-      <p class="text-primary intro-text">"Hello! Sharing world"</p>
-      <h2 class="text-primary page-heading">Lagos International Education Fair 2021</h2>
-      <div class="main-card text-dark">
-        Introducing institutions to an eager and growing market of large potential pool of Nigeria students.
+      <div class="container-md">
+        <p class="text-primary intro-text">Shining Light on young talents</p>
+        <h2 class="text-primary page-heading">Lagos International Education Fair 2021</h2>
+        <div class="main-card text-dark">
+          Introducing institutions to an eager and growing market of large potential pool of Nigeria students.
+        </div>
       </div>
     </section>
     <section class="programs dark-tiles text-white">

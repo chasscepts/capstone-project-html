@@ -18,7 +18,7 @@ $lato: Lato, Helvetica, Arial, sans-serif;
 
 $positions: relative, absolute, sticky, fixed;
 
-$displays: none, inline, inline-block, flex, grid;
+$displays: none, block, inline, inline-block, flex, grid;
 
 $flex-directions: row, column, row-reverse, column-reverse;
 
@@ -211,12 +211,43 @@ body {
   }
 }
 
+.header-menu-dark {
+  font-family: $coco-goose;
+  font-size: 0.6rem;
+  li {
+    padding: 7px 10px;
+
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+
+  i {
+    font-size: 0.9rem;
+  }
+}
+
+.header-menu-light {
+  font-family: $coco-goose;
+  font-size: 0.7rem;
+
+  li {
+    padding: 10px 15px;
+
+    &.campaign {
+      border: 2px solid $color-primary;
+    }
+  }
+}
+
 .hamburger-wrap {
   padding: 40px;
 }
 
 .home-intro {
   padding: 40px 0;
+  background-image: url(/assets/images/bg.png);background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .intro-text {
@@ -292,6 +323,8 @@ body {
 
 .speakers {
   padding: 0 15px;
+  background-image: url(/assets/images/light-bg.png);
+  background-repeat: repeat;
 
   .btn {
     display: block;
@@ -422,6 +455,18 @@ body {
     & {
       background-color: $color-dark;
       color: $color-secondary;
+    }
+  }
+}
+
+.container-md {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media-break(md) {
+    & {
+      max-width: 720px;
     }
   }
 }
