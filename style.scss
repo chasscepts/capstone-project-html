@@ -1,11 +1,47 @@
 $color-dark: #272a31;
 $color-primary: #ec5242;
 $color-secondary: #d3d3d3;
+$color-white: #fff;
+$color-black: #000;
 
 $colors: (
   'dark': $color-dark,
   'primary': $color-primary,
-  'secondary': $color-secondary
+  'secondary': $color-secondary,
+  'white': $color-white,
+  'black': $color-black
+);
+
+$coco-goose: Cocogoose, Helvetica, Arial, sans-serif;
+
+$lato: Lato, Helvetica, Arial, sans-serif;
+
+$positions: relative, absolute, sticky, fixed;
+
+$displays: none, inline, inline-block, flex, grid;
+
+$flex-directions: row, column, row-reverse, column-reverse;
+
+$wraps: wrap, nowrap;
+
+$orders: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12;
+
+$named-props: (
+  'justify-content': (
+    'start': flex-start,
+    'end': flex-end,
+    'between': space-between,
+    'around': space-around,
+    'evenly': space-evenly,
+    'center': center,
+    'stretch': stretch
+  ),
+  'align-items': (
+    'start': flex-start,
+    'end': flex-end,
+    'center': center,
+    'stretch': stretch
+  )
 );
 
 $break-points: (
@@ -20,6 +56,14 @@ $break-points: (
   @media (min-width: $break) {
     @content;
   }
+}
+
+body {
+  font-size: 14px;
+  line-height: 1.5;
+  font-family: $lato;
+  color: $color-dark;
+  font-weight: lighter;
 }
 
 *,
@@ -42,9 +86,105 @@ $break-points: (
     background-color: $color;
   }
 
+  .border-#{$key} {
+    border-color: $color;
+  }
+
   .hover-#{$key}:hover {
     color: $color;
   }
+}
+
+@each $position in $positions {
+  .position-#{$position} {
+    position: $position;
+  }
+}
+
+@each $display in $displays {
+  .d-#{$display} {
+    display: $display;
+  }
+
+  @each $break, $width in $break-points {
+    @include media-break($break) {
+      .d-#{$break}-#{$display} {
+        display: $display;
+      }
+    }
+  }
+}
+
+@each $prop, $vals in $named-props {
+  @each $key, $val in $vals {
+    .#{$prop}-#{$key} {
+      #{$prop}: $val;
+    }
+  }
+}
+
+@each $direction in $flex-directions {
+  .flex-#{$direction} {
+    flex-direction: $direction;
+  }
+
+  @each $break, $width in $break-points {
+    @include media-break($break) {
+      .flex-#{$break}-#{$direction} {
+        flex-direction: $direction;
+      }
+    }
+  }
+}
+
+@each $wrap in $wraps {
+  .flex-#{$wrap} {
+    flex-wrap: $wrap;
+  }
+
+  @each $break, $width in $break-points {
+    @include media-break($break) {
+      .flex-#{$break}-#{$wrap} {
+        flex-wrap: $wrap;
+      }
+    }
+  }
+}
+
+@each $order in $orders {
+  .order-#{$order} {
+    order: $order;
+  }
+}
+
+.text-muted {
+  opacity: 0.6;
+}
+
+.btn {
+  outline: none;
+  border: none;
+}
+
+.border {
+  border-width: 1px;
+  border-style: solid;
+}
+
+.border-left {
+  border-left-width: 1px;
+}
+
+.cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.dim {
+  background-color: rgba(0, 0, 0, 0.26);
 }
 
 .clip {
@@ -53,16 +193,235 @@ $break-points: (
   color: transparent;
 }
 
-.d-none {
-  display: none;
+.dark-tiles {
+  background: url(/assets/images/dark-bg.png) repeat;
 }
 
-@include media-break(md) {
-  .d-md-none {
-    display: none;
+.short-underline {
+  position: relative;
+  width: 100%;
+
+  &::after {
+    content: '';
+    position: absolute;
+    border-bottom: 1px solid $color-primary;
+    width: 40px;
+    bottom: 0;
+    left: calc(50% - 20px);
+  }
+}
+
+.hamburger-wrap {
+  padding: 40px;
+}
+
+.home-intro {
+  padding: 40px 0;
+}
+
+.intro-text {
+  font-size: 1.5rem;
+  font-weight: lighter;
+  padding: 0 20px;
+}
+
+.page-heading {
+  font-family: Cocogoose, Helvetica, Arial, sans-serif;
+  font-size: 3.0rem;
+  line-height: 0.9;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 10px 20px;
+}
+
+.main-card {
+  margin: 10px;
+  padding: 2rem;
+  border: 1px solid #fff;
+}
+
+.section-heading {
+  text-align: center;
+  padding: 15px;
+  font-weight: bold;
+  font-size: 1.12rem;
+}
+
+.programs {
+  padding: 10px;
+
+  .section-footer {
+    padding: 25px 40px;
   }
 
-  .d-md-block {
+  .btn {
+    width: 100%;
+    padding: 30px;
+    text-align: center;
+  }
+}
+
+.programs-article {
+  margin: 10px 15px;
+  padding: 20px;
+
+  .icon {
+    order: 1;
+    flex: 0 0 15%;
+  }
+
+  .heading {
+    order: 2;
+    flex: 0 0 30%;
+    font-weight: bold;
+    font-size: 1.05rem;
+    padding-left: 10px;
+  }
+
+  .body {
+    order: 3;
+    flex: 0 0 55%;
+    padding-left: 10px;
+  }
+}
+
+.thumbnail {
+  width: 90px;
+  height: 90px;
+}
+
+.speakers {
+  padding: 0 15px;
+
+  .btn {
     display: block;
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    border: 1px solid $color-secondary;
+
+    span {
+      position: relative;
+      padding-right: 25px;
+      text-transform: uppercase;
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: -1px;
+        right: 0;
+        width: 10px;
+        height: 10px;
+        border: 2px solid $color-primary;
+        border-top-width: 0;
+        border-right-width: 0;
+        transform: rotate(-45deg);
+      }
+    }
+  }
+}
+
+.img-wrap {
+  padding: 10px;
+}
+
+.sudoku-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 44px;
+  height: 44px;
+  z-index: -1;
+  background: url(assets/images/sd.png);
+  background-color: $color-black;
+
+  @include media-break(md) {
+    & {
+      background-color: $color-secondary;
+    }
+  }
+}
+
+.speakers-article {
+  padding: 20px 0;
+
+  .body {
+    padding-bottom: 20px;
+  }
+
+  .heading {
+    font-weight: bold;
+  }
+
+  .p1 {
+    font-family: $coco-goose;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 0.6rem;
+    padding: 5px 0;
+  }
+
+  .p2 {
+    line-height: 1;
+    font-family: $coco-goose;
+    font-weight: 100;
+    font-size: 0.6rem;
+  }
+}
+
+.partners {
+  margin-top: 30px;
+  padding: 30px;
+}
+
+.partners-menu {
+  padding-top: 20px;
+  font-size: 1.8rem;
+  font-weight: bold;
+
+  .item {
+    flex: 0 0 33%;
+    padding: 0 10px;
+
+    @include media-break(md) {
+      flex: 0 0 20%;
+    }
+  }
+
+  .google {
+    font-weight: 300;
+  }
+
+  .naver {
+    font-weight: 900;
+    font-size: 1.6rem;
+  }
+
+  .daumkakao, .airbnb {
+    font-weight: bold;
+    font-size: 1.3rem;
+  }
+
+  .airbnb {
+    font-weight: bold;
+    font-size: 1.3rem;
+  }
+}
+
+.page-footer {
+  padding: 30px;
+  color: $color-dark;
+
+  .logo-link {
+    padding-right: 20px;
+  }
+
+  @include media-break(md) {
+    & {
+      background-color: $color-dark;
+      color: $color-secondary;
+    }
   }
 }

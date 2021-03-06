@@ -9,6 +9,7 @@
   <link href="//db.onlinewebfonts.com/c/d14035f6b1afeabafbee4abb2ebf0fc6?family=COCOGOOSE" rel="stylesheet" type="text/css"/>
   <link rel="stylesheet" type="text/css" href="reset.css">
   <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="hamburger.css">
   <title>Nigeria Education Fair</title>
 </head>
 <body>
@@ -35,123 +36,204 @@
         </ul>
       </div>
     </nav>
-    <nav class="d-md-none">
+    <nav class="d-md-none drawer-nav">
       <h2 class="clip"> Hamburger Nav Bar</h2>
-      <button class="hamburger"><span></span></button>
+      <div class="hamburger-wrap">
+        <button class="hamburger"><span></span></button>
+      </div>
       <div>
 
       </div>
     </nav>
   </header>
   <main>
-    <section>
-      <p>"Hello! Sharing world"</p>
-      <h2>Lagos International Education Fair</h2>
-      <div class="card bg-secondary">
+    <section class="home-intro">
+      <p class="text-primary intro-text">"Hello! Sharing world"</p>
+      <h2 class="text-primary page-heading">Lagos International Education Fair 2021</h2>
+      <div class="main-card text-dark">
         Introducing institutions to an eager and growing market of large potential pool of Nigeria students.
       </div>
     </section>
-    <section class="programs">
-      <h2>Main Program</h2>
+    <section class="programs dark-tiles text-white">
+      <h2 class="section-heading short-underline">Main Program</h2>
       <div>
-        <article>
-          <header>
-            <img class="icon" alt="icon">
-            <h3>Lecture</h3>
-          </header>
-          <p>Listen to the speakers from various countries about the message of sharing and opening</p>
+        <article class="position-relative programs-article">
+          <div class="cover dim"></div>
+          <div class="d-flex d-dm-block align-items-center">
+            <h3 class="text-primary heading">Lecture</h3>
+            <img class="icon" alt="lecture" src="assets/images/lecture.png">
+            <p class="body">Listen to the speakers from various countries about the message of sharing and opening</p>
+          </div>
         </article>
-        <article>
-          <header>
-            <img class="icon" alt="icon">
-            <h3>Lecture</h3>
-          </header>
-          <p>Listen to the speakers from various countries about the message of sharing and opening</p>
+        <article class="position-relative programs-article">
+          <div class="cover dim"></div>
+          <div class="d-flex d-dm-block align-items-center">
+            <h3 class="text-primary heading">CC Exhibition</h3>
+            <img class="icon" alt="exhibition" src="assets/images/exhibition.png">
+            <p class="body">Listen to the speakers from various countries about the message of sharing and opening</p>
+          </div>
         </article>
-        <article>
-          <header>
-            <img class="icon" alt="icon">
-            <h3>Lecture</h3>
-          </header>
-          <p>Listen to the speakers from various countries about the message of sharing and opening</p>
+        <article class="position-relative programs-article">
+          <div class="cover dim"></div>
+          <div class="d-flex d-dm-block align-items-center">
+            <h3 class="text-primary heading">Forum</h3>
+            <img class="icon" alt="forum" src="assets/images/forum.png">
+            <p class="body">Listen to the speakers from various countries about the message of sharing and opening</p>
+          </div>
         </article>
-        <article>
-          <header>
-            <img class="icon" alt="icon">
-            <h3>Lecture</h3>
-          </header>
-          <p>Listen to the speakers from various countries about the message of sharing and opening</p>
+        <article class="position-relative programs-article">
+          <div class="cover dim"></div>
+          <div class="d-flex d-dm-block align-items-center">
+            <h3 class="text-primary heading">Workshop</h3>
+            <img class="icon" alt="workshop" src="assets/images/workshop.png">
+            <p class="body">Listen to the speakers from various countries about the message of sharing and opening</p>
+          </div>
         </article>
-        <article>
-          <header>
-            <img class="icon" alt="icon">
-            <h3>Lecture</h3>
-          </header>
-          <p>Listen to the speakers from various countries about the message of sharing and opening</p>
+        <article class="position-relative programs-article">
+          <div class="cover dim"></div>
+          <div class="d-flex d-dm-block align-items-center">
+            <h3 class="text-primary heading">CC Ignite</h3>
+            <img class="icon" alt="ignite" src="assets/images/ignite.png">
+            <p class="body">Listen to the speakers from various countries about the message of sharing and opening</p>
+          </div>
         </article>
+      </div>
+      <div class="section-footer">
+        <a class="text-white d-none d-md-block link" href="#">See The Whole Program</a>
+        <button class="btn text-white bg-primary d-block d-md-none">Join CC Global Summit 2015</button>
       </div>
     </section>
     <section class="speakers">
-      <h2>Featured Speakers</h2>
-      <div>
-        <article>
-          <img alt="speaker" src="">
-          <h3>Yochai Benkler</h3>
-          <p>Berkman Professor of Entrepreneurial Legal Studies at Havard Law School</p>
-          <p>Benler studies commons-based peer production and published his seminal book The Wealth of Networks in 2006</p>
+      <h2 class="section-heading text-dark short-underline">Featured Speakers</h2>
+      <div class="section-body d-flex flex-column flex-md-row">
+        <article class="d-flex speakers-article order-1">
+          <div class="position-relative img-wrap">
+            <div class="sudoku-bg position-absolute"></div>
+            <img class="thumbnail" alt="speaker" src="assets/images/kc.png">
+          </div>
+          <div class="body d-flex flex-column justify-content-between">
+            <div>
+              <h3 class="heading">Yochai Benkler</h3>
+              <p class="p1 text-primary">
+                Berkman Professor of Entrepreneurial Legal Studies at Havard Law School
+              </p>
+            </div>
+            <p class="p2 text-muted">
+              Benler studies commons-based peer production and published his seminal book The Wealth of Networks in 2006
+            </p>
+          </div>
         </article>
-        <article>
-          <img alt="speaker" src="">
-          <h3>Yochai Benkler</h3>
-          <p>Berkman Professor of Entrepreneurial Legal Studies at Havard Law School</p>
-          <p>Benler studies commons-based peer production and published his seminal book The Wealth of Networks in 2006</p>
+        <article class="d-flex speakers-article order-3">
+          <div class="position-relative img-wrap">
+            <div class="sudoku-bg position-absolute"></div>
+            <img class="thumbnail" alt="speaker" src="assets/images/kc.png">
+          </div>
+          <div class="body d-flex flex-column justify-content-between">
+            <div>
+              <h3 class="heading">Yochai Benkler</h3>
+              <p class="p1 text-primary">
+                Berkman Professor of Entrepreneurial Legal Studies at Havard Law School
+              </p>
+            </div>
+            <p class="p2 text-muted">
+              Benler studies commons-based peer production and published his seminal book The Wealth of Networks in 2006
+            </p>
+          </div>
         </article>
-        <article>
-          <img alt="speaker" src="">
-          <h3>Yochai Benkler</h3>
-          <p>Berkman Professor of Entrepreneurial Legal Studies at Havard Law School</p>
-          <p>Benler studies commons-based peer production and published his seminal book The Wealth of Networks in 2006</p>
+        <article class="d-none d-md-flex speakers-article order-2">
+          <div class="position-relative img-wrap">
+            <div class="sudoku-bg position-absolute"></div>
+            <img class="thumbnail" alt="speaker" src="assets/images/kc.png">
+          </div>
+          <div class="body d-flex flex-column justify-content-between">
+            <div>
+              <h3 class="heading">Yochai Benkler</h3>
+              <p class="p1 text-primary">
+                Berkman Professor of Entrepreneurial Legal Studies at Havard Law School
+              </p>
+            </div>
+            <p class="p2 text-muted">
+              Benler studies commons-based peer production and published his seminal book The Wealth of Networks in 2006
+            </p>
+          </div>
         </article>
-        <article>
-          <img alt="speaker" src="">
-          <h3>Yochai Benkler</h3>
-          <p>Berkman Professor of Entrepreneurial Legal Studies at Havard Law School</p>
-          <p>Benler studies commons-based peer production and published his seminal book The Wealth of Networks in 2006</p>
+        <article class="d-md-flex d-none speakers-article order-4">
+          <div class="position-relative img-wrap">
+            <div class="sudoku-bg position-absolute"></div>
+            <img class="thumbnail" alt="speaker" src="assets/images/kc.png">
+          </div>
+          <div class="body d-flex flex-column justify-content-between">
+            <div>
+              <h3 class="heading">Yochai Benkler</h3>
+              <p class="p1 text-primary">
+                Berkman Professor of Entrepreneurial Legal Studies at Havard Law School
+              </p>
+            </div>
+            <p class="p2 text-muted">
+              Benler studies commons-based peer production and published his seminal book The Wealth of Networks in 2006
+            </p>
+          </div>
         </article>
-        <article>
-          <img alt="speaker" src="">
-          <h3>Yochai Benkler</h3>
-          <p>Berkman Professor of Entrepreneurial Legal Studies at Havard Law School</p>
-          <p>Benler studies commons-based peer production and published his seminal book The Wealth of Networks in 2006</p>
+        <article class="d-md-flex d-none speakers-article order-3">
+          <div class="position-relative img-wrap">
+            <div class="sudoku-bg position-absolute"></div>
+            <img class="thumbnail" alt="speaker" src="assets/images/kc.png">
+          </div>
+          <div class="body d-flex flex-column justify-content-between">
+            <div>
+              <h3 class="heading">Yochai Benkler</h3>
+              <p class="p1 text-primary">
+                Berkman Professor of Entrepreneurial Legal Studies at Havard Law School
+              </p>
+            </div>
+            <p class="p2 text-muted">
+              Benler studies commons-based peer production and published his seminal book The Wealth of Networks in 2006
+            </p>
+          </div>
         </article>
-        <article>
-          <img alt="speaker" src="">
-          <h3>Yochai Benkler</h3>
-          <p>Berkman Professor of Entrepreneurial Legal Studies at Havard Law School</p>
-          <p>Benler studies commons-based peer production and published his seminal book The Wealth of Networks in 2006</p>
+        <article class="d-md-flex d-none speakers-article order-6">
+          <div class="position-relative img-wrap">
+            <div class="sudoku-bg position-absolute"></div>
+            <img class="thumbnail" alt="speaker" src="assets/images/kc.png">
+          </div>
+          <div class="body d-flex flex-column justify-content-between">
+            <div>
+              <h3 class="heading">Yochai Benkler</h3>
+              <p class="p1 text-primary">
+                Berkman Professor of Entrepreneurial Legal Studies at Havard Law School
+              </p>
+            </div>
+            <p class="p2 text-muted">
+              Benler studies commons-based peer production and published his seminal book The Wealth of Networks in 2006
+            </p>
+          </div>
         </article>
       </div>
-      <button>
+      <button class="btn bg-white">
         <span>More</span>
       </button>
     </section>
-    <section class="partners">
-      <h2>Partner</h2>
-      <div>
-        <span>mozilla</span>
-        <span>Google</span>
-        <span>NAVER</span>
-        <span>daumkakao</span>
-        <span>airbnb</span>
-      </div>
+    <section class="partners bg-dark">
+      <h2 class="section-heading text-white short-underline">
+        Partner
+      </h2>
+      <ul class="d-flex flex-wrap flex-md-nowrap text-secondary text-muted justify-content-md-between justify-content-center partners-menu">
+        <li class="item"><a class="mozilla" href="#">mozilla</a></li>
+        <li class="item google"><a class="google" href="#">Google</a></li>
+        <li class="item"><a class="naver" href="#">NAVER</a></li>
+        <li class="item"><a class="daumkakao" href="#">daumkakao</a></li>
+        <li class="item"><a class="airbnb" href="#">airbnb</a></li>
+      </ul>
     </section>
   </main>
-  <footer>
-    <div>
-      <img alt="logo" src="">
+  <footer class="page-footer">
+    <div class="content d-flex justify-content-between align-items-center">
+      <a href="/" class="logo-link">
+        <img alt="logo" src="/assets/images/lekside.jpg">
+      </a>
       <div>
         <p>2021 Lagos International Education Fair. Some Rights Reserved</p>
-        <p>Some contact info</p>
+        <p class="d-none d-md-block">Some contact info</p>
       </div>
     </div>
   </footer>
