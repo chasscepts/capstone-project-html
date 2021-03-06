@@ -100,6 +100,23 @@ body {
   color: #000;
 }
 
+.text-muted,
+.hover-muted:hover {
+  color: #24282b85;
+}
+
+.bg-muted {
+  background-color: #24282b85;
+}
+
+.border-muted {
+  border-color: #24282b85;
+}
+
+.hover-muted:hover {
+  color: #24282b85;
+}
+
 .position-relative {
   position: relative;
 }
@@ -586,10 +603,6 @@ body {
           order: 12;
 }
 
-.text-muted {
-  opacity: 0.6;
-}
-
 .btn {
   outline: none;
   border: none;
@@ -682,25 +695,70 @@ body {
   background-size: cover;
 }
 
+.home-intro .date {
+  font-family: Cocogoose, Helvetica, Arial, sans-serif;
+  font-weight: 900;
+  font-size: 1.8rem;
+  line-height: 1.2;
+  margin-top: 30px;
+}
+
+.home-intro .date span {
+  font-family: Lato, Helvetica, Arial, sans-serif;
+  font-size: 1.1rem;
+  opacity: 0.6;
+}
+
+@media (min-width: 768px) {
+  .home-intro {
+    padding: 70px 0;
+  }
+}
+
 .intro-text {
-  font-size: 1.5rem;
-  font-weight: lighter;
+  font-size: 1.8rem;
+  font-weight: bold;
   padding: 0 20px;
+}
+
+@media (min-width: 768px) {
+  .intro-text {
+    padding-left: 0;
+  }
 }
 
 .page-heading {
   font-family: Cocogoose, Helvetica, Arial, sans-serif;
-  font-size: 3.0rem;
+  font-size: 3.5rem;
   line-height: 0.9;
   font-weight: bold;
   text-transform: uppercase;
   padding: 10px 20px;
+  max-width: 550px;
+}
+
+@media (min-width: 768px) {
+  .page-heading {
+    padding-left: 0;
+  }
 }
 
 .main-card {
+  font-family: Cocogoose, Helvetica, Arial, sans-serif;
+  font-size: 0.7rem;
   margin: 10px;
   padding: 2rem;
   border: 1px solid #fff;
+  max-width: 475px;
+  background-image: url(/assets/images/light-bg.png);
+  background-repeat: repeat;
+  background-color: #d3d3d3;
+}
+
+@media (min-width: 768px) {
+  .main-card {
+    margin-left: 0;
+  }
 }
 
 .section-heading {

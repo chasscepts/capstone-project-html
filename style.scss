@@ -3,13 +3,15 @@ $color-primary: #ec5242;
 $color-secondary: #d3d3d3;
 $color-white: #fff;
 $color-black: #000;
+$color-muted: #24282b85;
 
 $colors: (
   'dark': $color-dark,
   'primary': $color-primary,
   'secondary': $color-secondary,
   'white': $color-white,
-  'black': $color-black
+  'black': $color-black,
+  'muted': $color-muted
 );
 
 $coco-goose: Cocogoose, Helvetica, Arial, sans-serif;
@@ -157,10 +159,6 @@ body {
   }
 }
 
-.text-muted {
-  opacity: 0.6;
-}
-
 .btn {
   outline: none;
   border: none;
@@ -248,27 +246,64 @@ body {
   padding: 40px 0;
   background-image: url(/assets/images/bg.png);background-repeat: no-repeat;
   background-size: cover;
+
+  .date {
+    font-family: $coco-goose;
+    font-weight: 900;
+    font-size: 1.8rem;
+    line-height: 1.2;
+    margin-top: 30px;
+
+    span {
+      font-family: $lato;
+      font-size: 1.1rem;
+      opacity: 0.6;
+    }
+  }
+
+  @include media-break(md) {
+    padding: 70px 0;
+  }
 }
 
 .intro-text {
-  font-size: 1.5rem;
-  font-weight: lighter;
+  font-size: 1.8rem;
+  font-weight: bold;
   padding: 0 20px;
+
+  @include media-break(md) {
+    padding-left: 0;
+  }
 }
 
 .page-heading {
-  font-family: Cocogoose, Helvetica, Arial, sans-serif;
-  font-size: 3.0rem;
+  font-family: $coco-goose;
+  font-size: 3.5rem;
   line-height: 0.9;
   font-weight: bold;
   text-transform: uppercase;
   padding: 10px 20px;
+  max-width: 550px;
+
+  @include media-break(md) {
+    padding-left: 0;
+  }
 }
 
 .main-card {
+  font-family: $coco-goose;
+  font-size: 0.7rem;
   margin: 10px;
   padding: 2rem;
   border: 1px solid #fff;
+  max-width: 475px;
+  background-image: url(/assets/images/light-bg.png);
+  background-repeat:  repeat;
+  background-color: $color-secondary;
+
+  @include media-break(md) {
+    margin-left: 0;
+  }
 }
 
 .section-heading {
