@@ -867,7 +867,7 @@ body {
 }
 
 .speakers {
-  padding: 0 15px;
+  padding: 20px 15px 40px;
   background-image: url(/assets/images/light-bg.png);
   background-repeat: repeat;
 }
@@ -902,6 +902,12 @@ body {
           transform: rotate(-45deg);
 }
 
+@media (min-width: 768px) {
+  .speakers .btn {
+    display: none;
+  }
+}
+
 .img-wrap {
   padding: 10px;
 }
@@ -920,6 +926,18 @@ body {
 @media (min-width: 768px) {
   .sudoku-bg {
     background-color: #d3d3d3;
+  }
+}
+
+@media (min-width: 768px) {
+  .speakers .section-body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
   }
 }
 
@@ -946,12 +964,18 @@ body {
 .speakers-article .p2 {
   line-height: 1;
   font-family: Cocogoose, Helvetica, Arial, sans-serif;
-  font-weight: 100;
   font-size: 0.6rem;
 }
 
+@media (min-width: 768px) {
+  .speakers-article {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+  }
+}
+
 .partners {
-  margin-top: 30px;
   padding: 30px;
 }
 

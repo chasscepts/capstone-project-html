@@ -396,7 +396,7 @@ body {
 }
 
 .speakers {
-  padding: 0 15px;
+  padding: 20px 15px 40px;
   background-image: url(/assets/images/light-bg.png);
   background-repeat: repeat;
 
@@ -427,6 +427,10 @@ body {
         transform: rotate(-45deg);
       }
     }
+
+    @include media-break(md) {
+      display: none;
+    }
   }
 }
 
@@ -447,6 +451,15 @@ body {
   @include media-break(md) {
     & {
       background-color: $color-secondary;
+    }
+  }
+}
+
+.speakers {
+  .section-body {
+    @include media-break(md) {
+      display: flex;
+      flex-flow: row wrap;
     }
   }
 }
@@ -473,13 +486,15 @@ body {
   .p2 {
     line-height: 1;
     font-family: $coco-goose;
-    font-weight: 100;
     font-size: 0.6rem;
+  }
+
+  @include media-break(md) {
+    flex: 0 0 50%;
   }
 }
 
 .partners {
-  margin-top: 30px;
   padding: 30px;
 }
 
