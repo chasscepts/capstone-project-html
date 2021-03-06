@@ -918,7 +918,8 @@ body {
   top: 0;
   width: 44px;
   height: 44px;
-  z-index: -1;
+  -webkit-clip-path: polygon(0 0, 44px 0, 44px 10px, 10px 10px, 10px 44px, 0 44px);
+          clip-path: polygon(0 0, 44px 0, 44px 10px, 10px 10px, 10px 44px, 0 44px);
   background: url(assets/images/sd.png);
   background-color: #000;
 }
@@ -990,6 +991,7 @@ body {
       -ms-flex: 0 0 33%;
           flex: 0 0 33%;
   padding: 0 10px;
+  text-align: center;
 }
 
 @media (min-width: 768px) {
@@ -1025,13 +1027,16 @@ body {
 }
 
 .page-footer .logo-link {
-  padding-right: 20px;
+  margin-right: 20px;
 }
 
 @media (min-width: 768px) {
   .page-footer {
     background-color: #272a31;
     color: #d3d3d3;
+  }
+  .page-footer .logo-link {
+    margin-right: 50px;
   }
 }
 

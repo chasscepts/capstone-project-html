@@ -444,7 +444,7 @@ body {
   top: 0;
   width: 44px;
   height: 44px;
-  z-index: -1;
+  clip-path: polygon(0 0, 44px 0, 44px 10px, 10px 10px, 10px 44px, 0 44px);
   background: url(assets/images/sd.png);
   background-color: $color-black;
 
@@ -506,6 +506,7 @@ body {
   .item {
     flex: 0 0 33%;
     padding: 0 10px;
+    text-align: center;
 
     @include media-break(md) {
       flex: 0 0 20%;
@@ -537,13 +538,15 @@ body {
   color: $color-dark;
 
   .logo-link {
-    padding-right: 20px;
+    margin-right: 20px;
   }
 
   @include media-break(md) {
-    & {
-      background-color: $color-dark;
-      color: $color-secondary;
+    background-color: $color-dark;
+    color: $color-secondary;
+    
+    .logo-link {
+      margin-right: 50px;
     }
   }
 }
