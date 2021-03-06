@@ -325,11 +325,24 @@ body {
     padding: 30px;
     text-align: center;
   }
+
+  .link {
+    text-align: center;
+    font-weight: bold;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    text-decoration: underline;
+  }
+
+  @include media-break(md) {
+    padding: 30px 0;
+  }
 }
 
 .programs-article {
-  margin: 10px 15px;
+  margin: 30px 15px;
   padding: 20px;
+  flex: 0 0 20%;
 
   .icon {
     order: 1;
@@ -345,9 +358,35 @@ body {
   }
 
   .body {
+    font-weight: bold;
+    font-size: 0.75rem;
     order: 3;
     flex: 0 0 55%;
     padding-left: 10px;
+  }
+
+  @include media-break(md) {
+    margin-left: 2px;
+    margin-right: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+    justify-content: space-between;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    .body {
+      text-align: center;
+    }
+
+    .heading {
+      padding-bottom: 10px;
+    }
   }
 }
 
