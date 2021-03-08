@@ -615,13 +615,13 @@ b {
 
   &.expanded {
     .more {
-      display: block;
+      display: flex;
     }
   }
 
   @include media-break(md) {
     .more {
-      display: block;
+      display: flex;
     }
   }
 }
@@ -652,6 +652,7 @@ b {
 
   .body {
     padding-bottom: 20px;
+    padding-right: 20px;
   }
 
   .heading {

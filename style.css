@@ -1209,12 +1209,16 @@ b {
 }
 
 .speakers.expanded .more {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 @media (min-width: 768px) {
   .speakers .more {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
@@ -1246,6 +1250,7 @@ b {
 
 .speakers-article .body {
   padding-bottom: 20px;
+  padding-right: 20px;
 }
 
 .speakers-article .heading {
