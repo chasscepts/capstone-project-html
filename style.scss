@@ -334,6 +334,10 @@ b {
     text-transform: uppercase;
     padding: 10px 20px;
     max-width: 550px;
+    background: linear-gradient(25deg, rgb(250, 14, 14) 0, rgb(110, 15, 15) 25%, rgb(201, 13, 13) 15%, #a31809 50%, #e91f08 75%, #e91f08 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
   
     @include media-break(md) {
       padding-left: 0;

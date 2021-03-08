@@ -888,6 +888,10 @@ b {
   text-transform: uppercase;
   padding: 10px 20px;
   max-width: 550px;
+  background: linear-gradient(25deg, #fa0e0e 0, #6e0f0f 25%, #c90d0d 15%, #a31809 50%, #e91f08 75%, #e91f08 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 @media (min-width: 768px) {
