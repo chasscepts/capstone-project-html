@@ -155,6 +155,12 @@ body {
   display: none;
 }
 
+@media (min-width: 576px) {
+  .d-sm-none {
+    display: none;
+  }
+}
+
 @media (min-width: 768px) {
   .d-md-none {
     display: none;
@@ -175,6 +181,12 @@ body {
 
 .d-block {
   display: block;
+}
+
+@media (min-width: 576px) {
+  .d-sm-block {
+    display: block;
+  }
 }
 
 @media (min-width: 768px) {
@@ -199,6 +211,12 @@ body {
   display: inline;
 }
 
+@media (min-width: 576px) {
+  .d-sm-inline {
+    display: inline;
+  }
+}
+
 @media (min-width: 768px) {
   .d-md-inline {
     display: inline;
@@ -219,6 +237,12 @@ body {
 
 .d-inline-block {
   display: inline-block;
+}
+
+@media (min-width: 576px) {
+  .d-sm-inline-block {
+    display: inline-block;
+  }
 }
 
 @media (min-width: 768px) {
@@ -243,6 +267,14 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media (min-width: 576px) {
+  .d-sm-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 @media (min-width: 768px) {
@@ -272,6 +304,13 @@ body {
 .d-grid {
   display: -ms-grid;
   display: grid;
+}
+
+@media (min-width: 576px) {
+  .d-sm-grid {
+    display: -ms-grid;
+    display: grid;
+  }
 }
 
 @media (min-width: 768px) {
@@ -367,6 +406,15 @@ body {
           flex-direction: row;
 }
 
+@media (min-width: 576px) {
+  .flex-sm-row {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
 @media (min-width: 768px) {
   .flex-md-row {
     -webkit-box-orient: horizontal;
@@ -399,6 +447,15 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+@media (min-width: 576px) {
+  .flex-sm-column {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 @media (min-width: 768px) {
@@ -435,6 +492,15 @@ body {
           flex-direction: row-reverse;
 }
 
+@media (min-width: 576px) {
+  .flex-sm-row-reverse {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+}
+
 @media (min-width: 768px) {
   .flex-md-row-reverse {
     -webkit-box-orient: horizontal;
@@ -469,6 +535,15 @@ body {
           flex-direction: column-reverse;
 }
 
+@media (min-width: 576px) {
+  .flex-sm-column-reverse {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+
 @media (min-width: 768px) {
   .flex-md-column-reverse {
     -webkit-box-orient: vertical;
@@ -501,6 +576,13 @@ body {
       flex-wrap: wrap;
 }
 
+@media (min-width: 576px) {
+  .flex-sm-wrap {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
 @media (min-width: 768px) {
   .flex-md-wrap {
     -ms-flex-wrap: wrap;
@@ -525,6 +607,13 @@ body {
 .flex-nowrap {
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
+}
+
+@media (min-width: 576px) {
+  .flex-sm-nowrap {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
 }
 
 @media (min-width: 768px) {
@@ -1326,6 +1415,14 @@ body {
   }
 }
 
+.tickets {
+  color: #24282b85;
+}
+
+.tickets .section-heading {
+  color: #272a31;
+}
+
 .tickets .tickets-top,
 .tickets .tickets-bottom {
   padding: 40px;
@@ -1489,7 +1586,18 @@ body {
 }
 
 .tickets .lunch-menu {
-  padding: 30px;
+  padding: 30px 3px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (min-width: 576px) {
+  .tickets .lunch-menu {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .tickets .lunch-option {
@@ -1499,11 +1607,24 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 20px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 15px;
+  text-align: center;
 }
 
-.tickets .lunch-option label {
-  margin-right: 5px;
+@media (min-width: 576px) {
+  .tickets .lunch-option {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .tickets .lunch-option label {
+    margin-right: 5px;
+  }
 }
 
 .tickets .tickets-button-wrap {

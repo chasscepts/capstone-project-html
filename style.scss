@@ -49,6 +49,7 @@ $named-props: (
 );
 
 $break-points: (
+  sm: 576px,
   md: 768px,
   lg: 992px,
   xl: 1024px
@@ -797,6 +798,12 @@ body {
 }
 
 .tickets {
+  color: $color-muted;
+
+  .section-heading {
+    color: $color-dark;
+  }
+
   .tickets-top,
   .tickets-bottom {
     padding: 40px;
@@ -953,16 +960,27 @@ body {
   }
 
   .lunch-menu {
-    padding: 30px;
+    padding: 30px 3px;
+    justify-content: center;
+
+    @include media-break(sm) {
+      justify-content: center;
+    }
   }
 
   .lunch-option {
     display: flex;
     align-items: center;
-    padding: 0 20px;
+    flex-direction: column;
+    padding: 0 15px;
+    text-align: center;
 
-    label {
-      margin-right: 5px;
+    @include media-break(sm) {
+      flex-direction: row;
+
+      label {
+        margin-right: 5px;
+      }
     }
   }
 
