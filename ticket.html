@@ -4,135 +4,193 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+  <link href="//db.onlinewebfonts.com/c/d14035f6b1afeabafbee4abb2ebf0fc6?family=COCOGOOSE" rel="stylesheet" type="text/css"/>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="reset.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="hamburger.css">
+  <title>Nigeria Education Fair</title>
 </head>
 <body>
   <header>
+    <h1 class="clip">Ticket Page</h1>
+    <nav class="d-none d-md-block">
+      <h2 class="clip">Main Menu</h2>
+      <div class="bg-dark">
+        <ul class="d-flex justify-content-end container-md text-white header-menu-dark">
+          <li><a class="text-white header-top-menu-option" href="#"><i class="fab fa-facebook"  aria-hidden="true"></i></a></li>
+          <li><a class="text-white header-top-menu-option" href="#"><i class="fab fa-twitter"></i></a></li>
+          <li><a class="text-muted header-top-menu-option" href="#">English</a></li>
+          <li><a class="text-muted header-top-menu-option" href="#">My Page</a></li>
+          <li><a class="text-muted  header-top-menu-option" href="#">Logout</a></li>
+        </ul>
+      </div>
+      <div class="container-md d-flex justify-content-between align-items-center">
+        <a class="bottom-menu-option logo-menu-option" href="/"><img alt="logo" src="/assets/images/lekside.jpg"></a>
+        <ul class="d-flex align-items-center text-secondary header-menu-light">
+          <li><a class="text-primary hover-dark header-bottom-menu-option" href="/about.html">About</a></li>
+          <li><a class="hover-primary header-bottom-menu-option" href="#">Program</a></li>
+          <li><a class="hover-primary header-bottom-menu-option" href="#">Join</a></li>
+          <li><a class="hover-primary header-bottom-menu-option" href="#">Sponsor</a></li>
+          <li><a class="hover-primary header-bottom-menu-option" href="#">News</a></li>
+          <li class="campaign"><a class="text-primary hover-dark header-bottom-menu-option" href="#">CC Campaign</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav class="d-md-none drawer-nav">
+      <h2 class="clip"> Hamburger Nav Bar</h2>
+      <div class="hamburger-wrap">
+        <button class="hamburger"><span></span></button>
+      </div>
+      <div>
 
+      </div>
+    </nav>
   </header>
   <main>
-
+    <div class="tickets">
+      <form action="#">
+        <section class="position-relative bg-carton tickets-top">
+          <div class="container-md position-relative">
+            <h2 class="section-heading short-underline">Select Tickets</h2>
+            <div class="d-flex justify-content-center step-wrap">
+              <div class="step-pill">
+                <span class="text-primary step">Step 1</span>
+                <span class="action">Please select the day when you want to join Education Fair 2021</span>
+              </div>
+            </div>
+            <div class="envelope">
+              <div class="d-grid tickets-table bg-white">
+                <div class="row bg-carton">
+                  <span class="col col-1">Ticket</span>
+                  <span class="col col-2-3">1-Day-Ticket</span>
+                  <span class="col col-4">2-Day-Ticket</span>
+                  <span class="col col-5">Affiliates/Partners</span>
+                </div>
+                <div class="row">
+                  <span class="col col-1">Date</span>
+                  <span class="col col-2">5th Mar(Fri)</span>
+                  <span class="col col-3">6th Mar(Sat)</span>
+                  <span class="col col-4">5th-6th Mar(Fri-Sat)</span>
+                  <span class="col col-5">5th-6th Mar(Fri-Sat)</span>
+                </div>
+                <div class="row">
+                  <span class="col col-1">Normal</span>
+                  <label class="col col-2">
+                    <span class="d-block text-primary price">&#8358;70,000</span>
+                    <input type="radio" name="ticket" value="normal-1-day-5th">
+                  </label>
+                  <label class="col col-3">
+                    <span class="d-block text-primary price">&#8358;70,000</span>
+                    <input type="radio" name="ticket" value="normal-1-day-6th">
+                  </label>
+                  <label class="col col-4">
+                    <span class="d-block text-primary price">&#8358;100,000</span>
+                    <input type="radio" name="ticket" value="normal-2-days">
+                  </label>
+                  <label class="col col-5">
+                    <span class="d-block text-primary price">&#8358;0</span>
+                    <input type="radio" name="ticket" value="normal-affiliates">
+                  </label>
+                </div>
+                <div class="row">
+                  <span class="col col-1">Student</span>
+                  <label class="col col-2">
+                    <span class="d-block text-primary price">&#8358;30,000</span>
+                    <input type="radio" name="ticket" value="student-1-day-5th">
+                  </label>
+                  <label class="col col-3">
+                    <span class="d-block text-primary price">&#8358;30,000</span>
+                    <input type="radio" name="ticket" value="student-1-day-6th">
+                  </label>
+                  <label class="col col-4">
+                    <span class="d-block text-primary price">&#8358;50,000</span>
+                    <input type="radio" name="ticket" value="student-2-days">
+                  </label>
+                  <label class="col col-5">
+                    <span class="d-block text-primary price">&#8358;0</span>
+                    <input type="radio" name="ticket" value="student-affiliates">
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="position-relative tickets-bottom">
+          <h2>Select Your Lunch</h2>
+          <div>
+            <span>Step 2</span>
+            <span>Please select your lunch for registered day. There will be further costs for the lunch</span>
+          </div>
+          <div>
+            <time class="lunch-date" datetime="2021-03-05">Fri. 5th March 2021</time>
+            <ul>
+              <li>
+                <label for="menu-11">menu 1</label>
+                <input type="radio" name="day-1-lunch" id="menu-11">
+              </li>
+              <li>
+                <label for="menu-12">menu 2</label>
+                <input type="radio" name="day-1-lunch" id="menu-12">
+              </li>
+              <li>
+                <label for="menu-13">menu 3</label>
+                <input type="radio" name="day-1-lunch" id="menu-13">
+              </li>
+              <li>
+                <label for="menu-14">menu 4</label>
+                <input type="radio" name="day-1-lunch" id="menu-14">
+              </li>
+              <li>
+                <label for="menu-15">menu 5</label>
+                <input type="radio" name="day-1-lunch" id="menu-15">
+              </li>
+            </ul>
+          </div>
+          <div>
+            <time class="lunch-date" datetime="2021-03-05">Fri. 5th March 2021</time>
+            <ul>
+              <li>
+                <label for="menu-21">menu 1</label>
+                <input type="radio" name="day-2-lunch" id="menu-21">
+              </li>
+              <li>
+                <label for="menu-22">menu 2</label>
+                <input type="radio" name="day-2-lunch" id="menu-22">
+              </li>
+              <li>
+                <label for="menu-23">menu 3</label>
+                <input type="radio" name="day-2-lunch" id="menu-23">
+              </li>
+              <li>
+                <label for="menu-24">menu 4</label>
+                <input type="radio" name="day-2-lunch" id="menu-24">
+              </li>
+              <li>
+                <label for="menu-25">menu 5</label>
+                <input type="radio" name="day-2-lunch" id="menu-25">
+              </li>
+            </ul>
+          </div>
+        </section>
+      </form>
+    </div>
   </main>
-  <footer>
-    <form>
-      <section>
-        <h2>Select Tickets</h2>
+  <footer class="page-footer">
+    <div class="container-md">
+      <div class="content d-flex align-items-center">
+        <a href="/" class="logo-link">
+          <img alt="logo" src="/assets/images/lekside.jpg">
+        </a>
         <div>
-          <span>Step 1</span>
-          <span>Please select the day when you want to join Edacational Fair</span>
+          <p>2021 Lagos International Education Fair. Some Rights Reserved</p>
+          <p class="d-none d-md-block">Some contact info</p>
         </div>
-        <div>
-          <div>
-            <span>Ticket</span>
-            <span>1-Day-Ticket</span>
-            <span>2-Day-Ticket</span>
-            <span>Affiliates/Partners</span>
-          </div>
-          <div>
-            <span>Date</span>
-            <span>5.Mar(Fri)</span>
-            <span>6.Mar(Sat)</span>
-            <span>5.-6.Mar(Fri-Sat)</span>
-            <span>5.-6.Mar(Fri-Sat)</span>
-          </div>
-          <div>
-            <span>Normal</span>
-            <label>
-              <span>N70,000</span>
-              <input type="radio" name="ticket" value="normal-1-day-5th">
-            </label>
-            <label>
-              <span>N70,000</span>
-              <input type="radio" name="ticket" value="normal-1-day-6th">
-            </label>
-            <label>
-              <span>N100,000</span>
-              <input type="radio" name="ticket" value="normal-2-day">
-            </label>
-            <label>
-              <span>N0</span>
-              <input type="radio" name="ticket" value="normal-affiliate">
-            </label>
-          </div>
-          <div>
-            <span>Student</span>
-            <label>
-              <span>N30,000</span>
-              <input type="radio" name="ticket" value="student-1-day-5th">
-            </label>
-            <label>
-              <span>N30,000</span>
-              <input type="radio" name="ticket" value="student-1-day-6th">
-            </label>
-            <label>
-              <span>N50,000</span>
-              <input type="radio" name="ticket" value="student-2-day">
-            </label>
-            <label>
-              <span>N0</span>
-              <input type="radio" name="ticket" value="student-affiliate">
-            </label>
-          </div>
-        </div>
-      </section>
-      <section>
-        <h2>Select Your Lunch</h2>
-        <div>
-          <span>Step 2</span>
-          <span>Please select your lunch for registered day. There will be further costs for the lunch</span>
-        </div>
-        <div>
-          <time class="lunch-date" datetime="2021-03-05">Fri. 5th March 2021</time>
-          <ul>
-            <li>
-              <label for="menu-11">menu 1</label>
-              <input type="radio" name="day-1-lunch" id="menu-11">
-            </li>
-            <li>
-              <label for="menu-12">menu 2</label>
-              <input type="radio" name="day-1-lunch" id="menu-12">
-            </li>
-            <li>
-              <label for="menu-13">menu 3</label>
-              <input type="radio" name="day-1-lunch" id="menu-13">
-            </li>
-            <li>
-              <label for="menu-14">menu 4</label>
-              <input type="radio" name="day-1-lunch" id="menu-14">
-            </li>
-            <li>
-              <label for="menu-15">menu 5</label>
-              <input type="radio" name="day-1-lunch" id="menu-15">
-            </li>
-          </ul>
-        </div>
-        <div>
-          <time class="lunch-date" datetime="2021-03-05">Fri. 5th March 2021</time>
-          <ul>
-            <li>
-              <label for="menu-21">menu 1</label>
-              <input type="radio" name="day-2-lunch" id="menu-21">
-            </li>
-            <li>
-              <label for="menu-22">menu 2</label>
-              <input type="radio" name="day-2-lunch" id="menu-22">
-            </li>
-            <li>
-              <label for="menu-23">menu 3</label>
-              <input type="radio" name="day-2-lunch" id="menu-23">
-            </li>
-            <li>
-              <label for="menu-24">menu 4</label>
-              <input type="radio" name="day-2-lunch" id="menu-24">
-            </li>
-            <li>
-              <label for="menu-25">menu 5</label>
-              <input type="radio" name="day-2-lunch" id="menu-25">
-            </li>
-          </ul>
-        </div>
-      </section>
-    </form>
+      </div>
+    </div>
   </footer>
 </body>
 </html>
