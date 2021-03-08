@@ -1175,14 +1175,19 @@ body {
   color: #272a31;
 }
 
+.page-footer.tickets-footer {
+  color: #fff;
+  background-color: #272a31;
+}
+
 .page-footer .logo-link {
   margin-right: 20px;
 }
 
 @media (min-width: 768px) {
-  .page-footer {
+  .page-footer.about-footer {
+    color: #fff;
     background-color: #272a31;
-    color: #d3d3d3;
   }
   .page-footer .logo-link {
     margin-right: 50px;
@@ -1313,6 +1318,9 @@ body {
 }
 
 @media (min-width: 768px) {
+  .recap {
+    padding-bottom: 80px;
+  }
   .recap .section-body {
     height: 262px;
   }

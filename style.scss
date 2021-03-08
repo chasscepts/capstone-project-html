@@ -661,14 +661,21 @@ body {
   padding: 30px;
   color: $color-dark;
 
+  &.tickets-footer {
+    color: $color-white;
+    background-color: $color-dark;
+  }
+
   .logo-link {
     margin-right: 20px;
   }
 
   @include media-break(md) {
-    background-color: $color-dark;
-    color: $color-secondary;
-    
+    &.about-footer {
+      color: $color-white;
+      background-color: $color-dark;
+    }
+
     .logo-link {
       margin-right: 50px;
     }
@@ -782,6 +789,7 @@ body {
   }
 
   @include media-break(md) {
+    padding-bottom: 80px;
     .section-body {
       height: 262px;
     }
