@@ -2,8 +2,8 @@
   position: relative;
   outline: none;
   border: none;
-  width: 40px;
-  height: 40px;
+  width: 32px;
+  height: 32px;
   background-color: transparent;
   cursor: pointer;
 }
@@ -11,18 +11,18 @@
 .hamburger > span {
   display: block;
   position: absolute;
-  width: 40px;
+  width: 32px;
   height: 8px;
   background-color: #272a31;
   left: 0;
-  top: 16px;
+  top: 12px;
   transition: all 0.5s ease-in-out;
 }
 
 .hamburger::before {
   content: "";
   position: absolute;
-  width: 40px;
+  width: 32px;
   height: 8px;
   background-color: #272a31;
   left: 0;
@@ -34,7 +34,7 @@
 .hamburger::after {
   content: "";
   position: absolute;
-  width: 40px;
+  width: 32px;
   height: 8px;
   background-color: #272a31;
   left: 0;
@@ -49,13 +49,13 @@
 }
 
 .hamburger.open::before {
-  top: 8px;
+  top: 12px;
   transform: rotate(-45deg);
   transition: top 0.3s ease-in-out, transform 0.3s 0.3s ease-in-out;
 }
 
 .hamburger.open::after {
-  bottom: 8px;
+  bottom: 12px;
   transform: rotate(45deg);
   transition: bottom 0.3s ease-in-out, transform 0.3s 0.3s ease-in-out;
 }
