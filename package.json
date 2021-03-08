@@ -4,7 +4,9 @@
   "description": "Online Website for Nigeria Education Fair",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npm run webhint && npm run stylelint && echo \"✅✅✅ All tests passed ✅✅✅\"",
+    "webhint": "hint .",
+    "stylelint": "stylelint **/*.scss"
   },
   "repository": {
     "type": "git",

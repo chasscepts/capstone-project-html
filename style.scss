@@ -18,9 +18,9 @@ $colors: (
   'carton': $color-carton
 );
 
-$coco-goose: Cocogoose, Helvetica, Arial, sans-serif;
+$coco-goose: cocogoose, helvetica, arial, sans-serif;
 
-$lato: Lato, Helvetica, Arial, sans-serif;
+$lato: lato, helvetica, arial, sans-serif;
 
 $positions: relative, absolute, sticky, fixed;
 
@@ -60,6 +60,7 @@ $break-points: (
 @mixin media-break($break-point: md) {
   $width: map-get($break-points, $break-point);
   $break: if($width, $width, 768px);
+
   @media (min-width: $break) {
     @content;
   }
@@ -205,7 +206,7 @@ b {
 
 .clip {
   position: absolute;
-  clip-path: circle(1);
+  clip-path: circle(1px);
   color: transparent;
 }
 
@@ -234,6 +235,19 @@ b {
   font-size: 1.6rem;
 }
 
+.header-menu-light {
+  font-family: $coco-goose;
+  font-size: 0.7rem;
+
+  li {
+    padding: 10px 15px;
+
+    &.campaign {
+      border: 2px solid $color-primary;
+    }
+  }
+}
+
 .header-menu-dark {
   font-weight: bold;
   font-size: 0.7rem;
@@ -248,19 +262,6 @@ b {
 
   i {
     font-size: 0.9rem;
-  }
-}
-
-.header-menu-light {
-  font-family: $coco-goose;
-  font-size: 0.7rem;
-
-  li {
-    padding: 10px 15px;
-
-    &.campaign {
-      border: 2px solid $color-primary;
-    }
   }
 }
 
@@ -314,20 +315,21 @@ b {
 
 .home-intro {
   padding: 100px 0 40px;
-  background-image: url(assets/images/bg.png);background-repeat: no-repeat;
+  background-image: url(assets/images/bg.png);
+  background-repeat: no-repeat;
   background-size: cover;
 
   .intro-text {
     font-size: 1.8rem;
     font-weight: bold;
     padding: 0 20px;
-  
+
     @include media-break(md) {
       font-size: 1.8rem;
       padding-left: 0;
     }
   }
-  
+
   .page-heading {
     font-family: $coco-goose;
     font-size: 2.5rem;
@@ -338,7 +340,6 @@ b {
     max-width: 550px;
     background: linear-gradient(25deg, rgb(250, 14, 14) 0, rgb(110, 15, 15) 25%, rgb(201, 13, 13) 15%, #a31809 50%, #e91f08 75%, #e91f08 100%);
     -webkit-background-clip: text;
-    background-clip: text;
     -webkit-text-fill-color: transparent;
 
     .number {
@@ -346,7 +347,7 @@ b {
       font-weight: bolder;
       font-size: 3rem;
     }
-  
+
     @include media-break(md) {
       padding-left: 0;
       font-size: 3.5rem;
@@ -356,7 +357,7 @@ b {
       }
     }
   }
-  
+
   .main-card {
     font-family: $lato;
     font-weight: bold;
@@ -366,9 +367,9 @@ b {
     border: 1px solid #fff;
     max-width: 475px;
     background-image: url(assets/images/light-bg.png);
-    background-repeat:  repeat;
+    background-repeat: repeat;
     background-color: $color-secondary;
-  
+
     @include media-break(md) {
       margin-left: 0;
     }
@@ -410,13 +411,13 @@ b {
     padding: 0 20px;
     display: none;
     line-height: 1.8;
-  
+
     @include media-break(md) {
       padding-left: 0;
       display: block;
     }
   }
-  
+
   .page-heading {
     font-family: $coco-goose;
     font-size: 2.2rem;
@@ -431,14 +432,14 @@ b {
     .number {
       font-family: $lato;
       font-size: 2.4rem;
-      font-weight:900;
+      font-weight: 900;
     }
-  
+
     @include media-break(md) {
       padding-left: 0;
     }
   }
-  
+
   .intro-card {
     font-size: 0.9rem;
     font-weight: bold;
@@ -446,12 +447,12 @@ b {
     margin: 10px 20px;
     padding: 2rem;
     border: 1px solid $color-secondary;
-  
+
     @include media-break(md) {
       margin-left: 0;
     }
   }
-  
+
   .contact-info {
     font-weight: bold;
     font-size: 0.9rem;
@@ -558,7 +559,7 @@ b {
   background-repeat: repeat;
 
   .section-body {
-    transition: all .3s linear;
+    transition: all 0.3s linear;
 
     @include media-break(md) {
       display: flex;
@@ -591,7 +592,7 @@ b {
         border-top-width: 0;
         border-right-width: 0;
         transform: rotate(-45deg);
-        transition: all .3s ease-in-out;
+        transition: all 0.3s ease-in-out;
       }
     }
 
@@ -666,7 +667,7 @@ b {
     font-size: 0.75rem;
     line-height: 1;
     padding: 5px 0 10px;
-    
+
     &::after {
       content: '';
       position: absolute;
@@ -717,7 +718,8 @@ b {
     font-size: 1.6rem;
   }
 
-  .daumkakao, .airbnb {
+  .daumkakao,
+  .airbnb {
     font-weight: bold;
     font-size: 1.3rem;
   }
@@ -782,6 +784,7 @@ b {
 
 .institutions {
   padding: 80px 40px;
+
   .table {
     border-top: 1px solid $color-muted;
     border-left: 1px solid $color-muted;
@@ -825,24 +828,6 @@ b {
 
     @include media-break(md) {
       flex: 0 0 50%;
-    }
-  }
-
-  .link {
-    position: relative;
-    display: block;
-    height: 100%;
-    overflow: hidden;
-    padding: 10px;
-
-    &:hover {
-      .recap-img {
-        transform: scale(1.2);
-      }
-
-      .effect {
-        opacity: 0.7;
-      }
     }
   }
 
@@ -893,8 +878,27 @@ b {
     transition: all 0.3s ease-in-out;
   }
 
+  .link {
+    position: relative;
+    display: block;
+    height: 100%;
+    overflow: hidden;
+    padding: 10px;
+
+    &:hover {
+      .recap-img {
+        transform: scale(1.2);
+      }
+
+      .effect {
+        opacity: 0.7;
+      }
+    }
+  }
+
   @include media-break(md) {
     padding-bottom: 80px;
+
     .section-body {
       height: 262px;
     }
@@ -940,22 +944,14 @@ b {
     }
 
     @include media-break(md) {
-      padding-top: 40px;
+      & {
+        padding-top: 40px;
+      }
     }
   }
 
   .envelope {
-    background: repeating-linear-gradient(
-      -45deg,
-      #f00,
-      #f00 5px,
-      #fff 5px,
-      #fff 10px,
-      #00b 10px,
-      #00b 15px,
-      #fff 15px,
-      #fff 20px
-    );
+    background: repeating-linear-gradient(-45deg, #f00, #f00 5px, #fff 5px, #fff 10px, #00b 10px, #00b 15px, #fff 15px, #fff 20px);
     padding: 5px;
   }
 
