@@ -1114,6 +1114,11 @@ b {
   background-repeat: repeat;
 }
 
+.speakers .section-body {
+  -webkit-transition: all .3s linear;
+  transition: all .3s linear;
+}
+
 @media (min-width: 768px) {
   .speakers .section-body {
     display: -webkit-box;
@@ -1154,11 +1159,33 @@ b {
   border-right-width: 0;
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.speakers .btn.expanded span::after {
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+  top: 4px;
 }
 
 @media (min-width: 768px) {
   .speakers .btn {
     display: none;
+  }
+}
+
+.speakers .more {
+  display: none;
+}
+
+.speakers.expanded .more {
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .speakers .more {
+    display: block;
   }
 }
 

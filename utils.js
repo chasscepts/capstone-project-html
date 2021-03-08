@@ -19,7 +19,32 @@
     });
   }
 
+  const setupHomeSpeakersExpand = () => {
+    const btn = document.querySelector('#home-speakers-more-btn');
+    if(!btn) {
+      // This is not home page
+      return;
+    }
+    let expanded = false;
+    const section = document.querySelector('#home-speakers');
+    const span = btn.querySelector('span');
+    btn.addEventListener('click', () => {
+      expanded = !expanded;
+      if(expanded) {
+        btn.classList.add('expanded');
+        section.classList.add('expanded');
+        span.innerHTML = 'Less';
+      }
+      else {
+        btn.classList.remove('expanded');
+        section.classList.remove('expanded');
+        span.innerHTML = 'More';
+      }
+    });
+  }
+
   window.addEventListener('load', () => {
     setupHamburgerNav();
+    setupHomeSpeakersExpand();
   })
 })();

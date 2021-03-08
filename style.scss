@@ -531,6 +531,8 @@ b {
   background-repeat: repeat;
 
   .section-body {
+    transition: all .3s linear;
+
     @include media-break(md) {
       display: flex;
       flex-flow: row wrap;
@@ -562,11 +564,37 @@ b {
         border-top-width: 0;
         border-right-width: 0;
         transform: rotate(-45deg);
+        transition: all .3s ease-in-out;
+      }
+    }
+
+    &.expanded {
+      span {
+        &::after {
+          transform: rotate(135deg);
+          top: 4px;
+        }
       }
     }
 
     @include media-break(md) {
       display: none;
+    }
+  }
+
+  .more {
+    display: none;
+  }
+
+  &.expanded {
+    .more {
+      display: block;
+    }
+  }
+
+  @include media-break(md) {
+    .more {
+      display: block;
     }
   }
 }
