@@ -1325,6 +1325,38 @@ b {
   padding: 20px 5px;
 }
 
+.institutions {
+  padding: 80px 40px;
+}
+
+.institutions .table {
+  border-top: 1px solid #24282b85;
+  border-left: 1px solid #24282b85;
+  margin-top: 40px;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+@media (min-width: 768px) {
+  .institutions .table {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.institutions .cell {
+  border-bottom: 1px solid #24282b85;
+  border-right: 1px solid #24282b85;
+  padding: 5px 25px;
+  background-color: #fff;
+}
+
+.institutions .cell .img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
 .recap {
   padding: 40px;
 }

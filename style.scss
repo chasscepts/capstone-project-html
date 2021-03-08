@@ -724,6 +724,33 @@ b {
   }
 }
 
+.institutions {
+  padding: 80px 40px;
+  .table {
+    border-top: 1px solid $color-muted;
+    border-left: 1px solid $color-muted;
+    margin-top: 40px;
+    grid-template-columns: repeat(2, 1fr);
+
+    @include media-break(md) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  .cell {
+    border-bottom: 1px solid $color-muted;
+    border-right: 1px solid $color-muted;
+    padding: 5px 25px;
+    background-color: $color-white;
+
+    .img {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
 .recap {
   padding: 40px;
 
