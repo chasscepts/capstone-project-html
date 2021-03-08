@@ -162,6 +162,10 @@ body {
   }
 }
 
+b {
+  font-weight: bold;
+}
+
 .btn {
   outline: none;
   border: none;
@@ -229,8 +233,9 @@ body {
 }
 
 .header-menu-dark {
-  font-family: $coco-goose;
-  font-size: 0.6rem;
+  font-weight: bold;
+  font-size: 0.7rem;
+
   li {
     padding: 7px 10px;
 
@@ -525,6 +530,13 @@ body {
   background-image: url(/assets/images/light-bg.png);
   background-repeat: repeat;
 
+  .section-body {
+    @include media-break(md) {
+      display: flex;
+      flex-flow: row wrap;
+    }
+  }
+
   .btn {
     display: block;
     width: 100%;
@@ -580,15 +592,6 @@ body {
   }
 }
 
-.speakers {
-  .section-body {
-    @include media-break(md) {
-      display: flex;
-      flex-flow: row wrap;
-    }
-  }
-}
-
 .speakers-article {
   padding: 20px 0;
 
@@ -601,17 +604,28 @@ body {
   }
 
   .p1 {
-    font-family: $coco-goose;
+    position: relative;
     font-style: italic;
-    font-weight: 300;
-    font-size: 0.6rem;
-    padding: 5px 0;
+    font-weight: 900;
+    font-size: 0.75rem;
+    line-height: 1;
+    padding: 5px 0 10px;
+    
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 20px;
+      border-bottom: 1px solid $color-secondary;
+    }
   }
 
   .p2 {
     line-height: 1;
-    font-family: $coco-goose;
-    font-size: 0.6rem;
+    font-weight: bold;
+    font-size: 0.75rem;
+    padding-top: 10px;
   }
 
   @include media-break(md) {
@@ -660,7 +674,9 @@ body {
 
 .page-footer {
   padding: 30px;
-  color: $color-dark;
+  color: $color-muted;
+  font-weight: bold;
+  font-size: 0.8rem;
 
   &.tickets-footer {
     color: $color-white;
@@ -669,6 +685,11 @@ body {
 
   .logo-link {
     margin-right: 20px;
+  }
+
+  .p2 {
+    padding-top: 10px;
+    font-weight: 500;
   }
 
   @include media-break(md) {

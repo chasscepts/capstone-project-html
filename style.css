@@ -709,6 +709,10 @@ body {
           order: 12;
 }
 
+b {
+  font-weight: bold;
+}
+
 .btn {
   outline: none;
   border: none;
@@ -777,8 +781,8 @@ body {
 }
 
 .header-menu-dark {
-  font-family: Cocogoose, Helvetica, Arial, sans-serif;
-  font-size: 0.6rem;
+  font-weight: bold;
+  font-size: 0.7rem;
 }
 
 .header-menu-dark li {
@@ -1110,6 +1114,18 @@ body {
   background-repeat: repeat;
 }
 
+@media (min-width: 768px) {
+  .speakers .section-body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+  }
+}
+
 .speakers .btn {
   display: block;
   width: 100%;
@@ -1168,18 +1184,6 @@ body {
   }
 }
 
-@media (min-width: 768px) {
-  .speakers .section-body {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row wrap;
-            flex-flow: row wrap;
-  }
-}
-
 .speakers-article {
   padding: 20px 0;
 }
@@ -1193,17 +1197,28 @@ body {
 }
 
 .speakers-article .p1 {
-  font-family: Cocogoose, Helvetica, Arial, sans-serif;
+  position: relative;
   font-style: italic;
-  font-weight: 300;
-  font-size: 0.6rem;
-  padding: 5px 0;
+  font-weight: 900;
+  font-size: 0.75rem;
+  line-height: 1;
+  padding: 5px 0 10px;
+}
+
+.speakers-article .p1::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 20px;
+  border-bottom: 1px solid #d3d3d3;
 }
 
 .speakers-article .p2 {
   line-height: 1;
-  font-family: Cocogoose, Helvetica, Arial, sans-serif;
-  font-size: 0.6rem;
+  font-weight: bold;
+  font-size: 0.75rem;
+  padding-top: 10px;
 }
 
 @media (min-width: 768px) {
@@ -1261,7 +1276,9 @@ body {
 
 .page-footer {
   padding: 30px;
-  color: #272a31;
+  color: #24282b85;
+  font-weight: bold;
+  font-size: 0.8rem;
 }
 
 .page-footer.tickets-footer {
@@ -1271,6 +1288,11 @@ body {
 
 .page-footer .logo-link {
   margin-right: 20px;
+}
+
+.page-footer .p2 {
+  padding-top: 10px;
+  font-weight: 500;
 }
 
 @media (min-width: 768px) {
