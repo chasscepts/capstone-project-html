@@ -117,6 +117,23 @@ body {
   color: #24282b85;
 }
 
+.text-carton,
+.hover-carton:hover {
+  color: #f8f8f8;
+}
+
+.bg-carton {
+  background-color: #f8f8f8;
+}
+
+.border-carton {
+  border-color: #f8f8f8;
+}
+
+.hover-carton:hover {
+  color: #f8f8f8;
+}
+
 .position-relative {
   position: relative;
 }
@@ -692,7 +709,7 @@ body {
 }
 
 .hamburger-wrap {
-  padding: 40px;
+  padding: 25px;
 }
 
 .home-intro {
@@ -754,6 +771,7 @@ body {
   font-size: 1.8rem;
   line-height: 1.2;
   margin-top: 30px;
+  padding-left: 20px;
 }
 
 .home-intro .date span {
@@ -1240,6 +1258,188 @@ body {
   .recap .section-body {
     height: 262px;
   }
+}
+
+.tickets .tickets-top,
+.tickets .tickets-bottom {
+  padding: 40px;
+}
+
+.tickets .tickets-top::before,
+.tickets .tickets-top::after {
+  content: '';
+  position: absolute;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.tickets .tickets-top::before {
+  width: 32px;
+  height: 32px;
+  background-color: #ec5242;
+  top: calc(100% - 16px);
+  left: calc(50% - 16px);
+}
+
+.tickets .tickets-top::after {
+  width: 8px;
+  height: 8px;
+  border-left: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  top: calc(100% - 4px);
+  left: calc(50% - 4px);
+}
+
+.tickets .envelope {
+  background: repeating-linear-gradient(-45deg, #f00, #f00 5px, #fff 5px, #fff 10px, #00b 10px, #00b 15px, #fff 15px, #fff 20px);
+  padding: 5px;
+}
+
+.tickets .tickets-table {
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 0.7rem;
+}
+
+.tickets .tickets-table .price {
+  font-size: 0.8rem;
+  margin-bottom: 5px;
+}
+
+.tickets .tickets-table .row {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[15];
+      grid-template-columns: repeat(15, 1fr);
+  border-bottom: 1px solid #d3d3d3;
+}
+
+.tickets .tickets-table .row:last-child {
+  border-bottom-width: 0;
+}
+
+.tickets .tickets-table .col {
+  border-right: 1px solid #d3d3d3;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.tickets .tickets-table .col:last-child {
+  border-right-width: 0;
+}
+
+.tickets .tickets-table .col-1 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1 / span 2;
+}
+
+.tickets .tickets-table .col-2 {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 3;
+  grid-column: 3 / span 3;
+}
+
+.tickets .tickets-table .col-3 {
+  -ms-grid-column: 6;
+  -ms-grid-column-span: 3;
+  grid-column: 6 / span 3;
+}
+
+.tickets .tickets-table .col-2-3 {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 6;
+  grid-column: 3 / span 6;
+}
+
+.tickets .tickets-table .col-4 {
+  -ms-grid-column: 9;
+  -ms-grid-column-span: 3;
+  grid-column: 9 / span 3;
+}
+
+.tickets .tickets-table .col-5 {
+  -ms-grid-column: 12;
+  -ms-grid-column-span: 4;
+  grid-column: 12 / span 4;
+}
+
+.tickets .step-wrap {
+  padding: 20px 0;
+}
+
+.tickets .step-pill {
+  padding: 10px 20px;
+  border: 1px solid #d3d3d3;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 0.75rem;
+  color: #24282b85;
+}
+
+.tickets .step-pill .step {
+  text-transform: uppercase;
+  padding: 0 15px;
+  position: relative;
+}
+
+.tickets .step-pill .step::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 6px;
+  width: 5px;
+  height: 5px;
+  background-color: #ec5242;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.tickets .lunch-card {
+  border: 1px solid #24282b85;
+  font-weight: bold;
+}
+
+.tickets .lunch-card.lunch-card-day-1 {
+  margin-bottom: 15px;
+  margin-top: 40px;
+}
+
+.tickets .lunch-date {
+  display: block;
+  text-align: center;
+  padding: 10px 0;
+  background-color: #f8f8f8;
+}
+
+.tickets .lunch-menu {
+  padding: 30px;
+}
+
+.tickets .lunch-option {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 20px;
+}
+
+.tickets .lunch-option label {
+  margin-right: 5px;
+}
+
+.tickets .tickets-button-wrap {
+  text-align: center;
+  padding-bottom: 60px;
+}
+
+.tickets .tickets-button-wrap button {
+  padding: 15px 40px;
+  font-weight: bold;
 }
 
 .container-md {
