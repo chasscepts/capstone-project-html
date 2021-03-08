@@ -756,7 +756,7 @@ b {
 }
 
 .dark-tiles {
-  background: url(/assets/images/dark-bg.png) repeat;
+  background: url(assets/images/dark-bg.png) repeat;
 }
 
 .short-underline {
@@ -862,7 +862,7 @@ b {
 
 .home-intro {
   padding: 100px 0 40px;
-  background-image: url(/assets/images/bg.png);
+  background-image: url(assets/images/bg.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -908,7 +908,7 @@ b {
   padding: 2rem;
   border: 1px solid #fff;
   max-width: 475px;
-  background-image: url(/assets/images/light-bg.png);
+  background-image: url(assets/images/light-bg.png);
   background-repeat: repeat;
   background-color: #d3d3d3;
 }
@@ -1114,7 +1114,7 @@ b {
 
 .speakers {
   padding: 20px 15px 40px;
-  background-image: url(/assets/images/light-bg.png);
+  background-image: url(assets/images/light-bg.png);
   background-repeat: repeat;
 }
 
