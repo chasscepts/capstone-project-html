@@ -1,3 +1,5 @@
+@import 'cocogoose';
+
 $color-dark: #272a31;
 $color-primary: #ec5242;
 $color-secondary: #d3d3d3;
@@ -314,7 +316,7 @@ b {
   padding: 100px 0 40px;
   background-image: url(assets/images/bg.png);background-repeat: no-repeat;
   background-size: cover;
-  
+
   .intro-text {
     font-size: 1.8rem;
     font-weight: bold;
@@ -338,16 +340,27 @@ b {
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+
+    .number {
+      font-family: $lato;
+      font-weight: bolder;
+      font-size: 3rem;
+    }
   
     @include media-break(md) {
       padding-left: 0;
       font-size: 3.5rem;
+
+      .number {
+        font-size: 3.5rem;
+      }
     }
   }
   
   .main-card {
-    font-family: $coco-goose;
-    font-size: 0.7rem;
+    font-family: $lato;
+    font-weight: bold;
+    font-size: 0.8rem;
     margin: 10px;
     padding: 2rem;
     border: 1px solid #fff;
@@ -373,6 +386,11 @@ b {
       font-family: $lato;
       font-size: 1.1rem;
       opacity: 0.6;
+
+      &.number {
+        font-size: 2rem;
+        opacity: 1;
+      }
     }
   }
 
@@ -401,7 +419,7 @@ b {
   
   .page-heading {
     font-family: $coco-goose;
-    font-size: 2.4rem;
+    font-size: 2.2rem;
     line-height: 1.2;
     font-weight: bold;
     text-transform: uppercase;
@@ -409,10 +427,15 @@ b {
     max-width: 460px;
     margin-left: auto;
     margin-right: auto;
+
+    .number {
+      font-family: $lato;
+      font-size: 2.4rem;
+      font-weight:900;
+    }
   
     @include media-break(md) {
       padding-left: 0;
-      font-size: 3.5rem;
     }
   }
   
