@@ -50,12 +50,14 @@
 
 .hamburger.open::before {
   top: 12px;
+  background-color: #ec5242;
   transform: rotate(-45deg);
-  transition: top 0.3s ease-in-out, transform 0.3s 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out, transform 0.3s 0.3s ease-in-out;
 }
 
 .hamburger.open::after {
   bottom: 12px;
+  background-color: #ec5242;
   transform: rotate(45deg);
-  transition: bottom 0.3s ease-in-out, transform 0.3s 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out, transform 0.3s 0.3s ease-in-out;
 }

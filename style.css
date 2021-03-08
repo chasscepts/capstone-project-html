@@ -623,6 +623,11 @@ body {
 .btn {
   outline: none;
   border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  opacity: 0.9;
 }
 
 .border {
@@ -640,6 +645,10 @@ body {
   left: 0;
   bottom: 0;
   right: 0;
+}
+
+.fade {
+  opacity: 0.6;
 }
 
 .dim {
@@ -708,12 +717,58 @@ body {
   border: 2px solid #ec5242;
 }
 
+.drawer-nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1500;
+}
+
+.drawer-nav .bg {
+  position: absolute;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 82px;
+  background-color: #fff;
+  border-bottom: 1px solid #24282b85;
+  -webkit-transition: top 0.2s linear;
+  transition: top 0.2s linear;
+}
+
+.drawer-nav .bg.slidedown {
+  top: 0;
+}
+
+.drawer-nav .drawer {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  padding: 100px 40px 20px;
+  height: 100vh;
+  width: 300px;
+  font-weight: bold;
+  font-size: 1.05rem;
+  background-color: #272a31;
+  -webkit-transition: left 0.3s linear;
+  transition: left 0.3s linear;
+}
+
+.drawer-nav .drawer.open {
+  left: 0;
+}
+
+.drawer-nav .drawer li:not(:last-child) {
+  margin-bottom: 20px;
+}
+
 .hamburger-wrap {
   padding: 25px;
 }
 
 .home-intro {
-  padding: 40px 0;
+  padding: 100px 0 40px;
   background-image: url(/assets/images/bg.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -727,14 +782,15 @@ body {
 
 @media (min-width: 768px) {
   .home-intro .intro-text {
+    font-size: 1.8rem;
     padding-left: 0;
   }
 }
 
 .home-intro .page-heading {
   font-family: Cocogoose, Helvetica, Arial, sans-serif;
-  font-size: 3.5rem;
-  line-height: 0.9;
+  font-size: 2.5rem;
+  line-height: 1;
   font-weight: bold;
   text-transform: uppercase;
   padding: 10px 20px;
@@ -744,6 +800,7 @@ body {
 @media (min-width: 768px) {
   .home-intro .page-heading {
     padding-left: 0;
+    font-size: 3.5rem;
   }
 }
 
@@ -787,7 +844,7 @@ body {
 }
 
 .about-intro {
-  padding: 40px 0;
+  padding: 100px 0 40px;
   text-align: center;
   background-color: #f8f8f8;
 }
@@ -814,7 +871,7 @@ body {
   font-weight: bold;
   text-transform: uppercase;
   padding: 10px 20px;
-  max-width: 480px;
+  max-width: 460px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -822,6 +879,7 @@ body {
 @media (min-width: 768px) {
   .about-intro .page-heading {
     padding-left: 0;
+    font-size: 3.5rem;
   }
 }
 
@@ -1265,9 +1323,11 @@ body {
   padding: 40px;
 }
 
-.tickets .tickets-top::before,
-.tickets .tickets-top::after {
-  content: '';
+.tickets .tickets-top {
+  padding-top: 100px;
+}
+
+.tickets .tickets-top::before, .tickets .tickets-top::after {
   position: absolute;
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
@@ -1288,6 +1348,12 @@ body {
   border-bottom: 2px solid #fff;
   top: calc(100% - 4px);
   left: calc(50% - 4px);
+}
+
+@media (min-width: 768px) {
+  .tickets .tickets-top {
+    padding-top: 40px;
+  }
 }
 
 .tickets .envelope {
