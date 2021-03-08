@@ -861,6 +861,11 @@ b {
   margin-bottom: 20px;
 }
 
+.drawer-nav .drawer li.demacator {
+  padding-bottom: 20px;
+  border-bottom: 1px dotted #474f56;
+}
+
 .hamburger-wrap {
   padding: 25px;
 }
