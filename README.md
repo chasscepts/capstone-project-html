@@ -25,7 +25,19 @@ To get a local copy up and running follow these simple example steps.
 
 ### Clone the project from it's github repo.
 
-### Run npm install to setup local linters.
+```
+
+    git clone https://github.com/chasscepts/capstone-project-html.git
+
+```
+
+### Run npm install to setup local linters (the packages to install are already setup in devDependencies of the package.json).
+
+```
+
+    npm install
+
+```
 
 ## Authors
 
@@ -57,4 +69,4 @@ Give a ⭐️ if you like this project!
 
 ## 📝 License
 
-This project is [MIT](lic.url) licensed.
+This project is [MIT](https://opensource.org/licenses/MIT) licensed.
