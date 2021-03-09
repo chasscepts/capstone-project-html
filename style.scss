@@ -400,6 +400,25 @@ b {
         opacity: 1;
       }
     }
+
+    .venue {
+      position: relative;
+      display: block;
+      padding-left: 25px;
+      font-size: 0.9rem;
+      margin-top: 8px;
+
+      &::before {
+        content: '';
+        position: absolute;
+        left: 5px;
+        top: 6px;
+        width: 6px;
+        height: 6px;
+        background-color: $color-primary;
+        transform: rotate(45deg);
+      }
+    }
   }
 
   @include media-break(md) {

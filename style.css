@@ -958,6 +958,26 @@ b {
   opacity: 1;
 }
 
+.home-intro .date .venue {
+  position: relative;
+  display: block;
+  padding-left: 25px;
+  font-size: 0.9rem;
+  margin-top: 8px;
+}
+
+.home-intro .date .venue::before {
+  content: '';
+  position: absolute;
+  left: 5px;
+  top: 6px;
+  width: 6px;
+  height: 6px;
+  background-color: #ec5242;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
 @media (min-width: 768px) {
   .home-intro {
     padding: 70px 0;
