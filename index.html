@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="reset.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="hamburger.css">
+  <script src="utils.js"></script>
+  <title>Nigeria Education Fair</title>
+</head>
+<body>
+  <header>
+    <h1 class="clip">Home Page</h1>
+    <nav class="d-none d-md-block">
+      <h2 class="clip">Main Menu</h2>
+      <div class="bg-dark">
+        <ul class="d-flex justify-content-end container-md text-white header-menu-dark">
+          <li><a class="text-white header-top-menu-option" href="#"><i class="fab fa-facebook"  aria-hidden="true"></i></a></li>
+          <li><a class="text-white header-top-menu-option" href="#"><i class="fab fa-twitter"></i></a></li>
+          <li><a class="text-secondary header-top-menu-option" href="#">English</a></li>
+          <li><a class="text-secondary header-top-menu-option" href="#">My Page</a></li>
+          <li><a class="text-secondary  header-top-menu-option" href="#">Logout</a></li>
+        </ul>
+      </div>
+      <div class="container-md d-flex justify-content-between align-items-center">
+        <a class="bottom-menu-option logo-menu-option" href="index.html"><img alt="logo" src="assets/images/lekside.jpg"></a>
+        <ul class="d-flex align-items-center text-secondary header-menu-light">
+          <li><a class="text-primary hover-dark header-bottom-menu-option" href="about.html">About</a></li>
+          <li><a class="hover-primary header-bottom-menu-option" href="#">Program</a></li>
+          <li><a class="hover-primary header-bottom-menu-option" href="ticket.html">Join</a></li>
+          <li><a class="hover-primary header-bottom-menu-option" href="#">Sponsor</a></li>
+          <li><a class="hover-primary header-bottom-menu-option" href="#">News</a></li>
+          <li class="campaign"><a class="text-primary hover-dark header-bottom-menu-option" href="#">CC Campaign</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav class="d-md-none drawer-nav">
+      <h2 class="clip"> Hamburger Nav Bar</h2>
+      <div class="drawer" id="drawer">
+        <ul class="text-white">
+          <li><a class="hover-primary" href="index.html">Home</a></li>
+          <li><a class="hover-primary" href="about.html">About</a></li>
+          <li><a class="hover-primary" href="#">Program</a></li>
+          <li><a class="hover-primary" href="ticket.html">Join</a></li>
+          <li><a class="hover-primary" href="#">Sponsor</a></li>
+          <li><a class="hover-primary" href="#">News</a></li>
+          <li class="demacator"><a class="hover-primary" href="#">CC Campaign</a></li>
+          <li><a class="hover-primary" href="/">English</a></li>
+          <li><a class="hover-primary" href="/">My Page</a></li>
+          <li><a class="hover-primary" href="/">Logout</a></li>
+        </ul>
+      </div>
+      <div class="bg" id="hamburger-bg"></div>
+      <div class="hamburger-wrap">
+        <button class="hamburger" id="hamburger"><span></span></button>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="home-intro">
+      <div class="container-md">
+        <p class="text-primary intro-text">Shining Light on young talents</p>
+        <h2 class="text-primary page-heading">International<br>Education Fair<br><span class="number">2021</span></h2>
+        <div class="main-card text-muted">
+          Introducing institutions to an eager and growing market of large potential pool of Nigeria students.
+        </div>
+        <div class="date text-muted">
+          <span class="number">2021.03.05 </span>(FRI) ~ <span class="number">16</span> (SAT)
+          <span class="venue">Abuja - Nicon Luxury Hotel, Abuja</span>
+          <span class="venue">Lagos - Oriental Hotel 3 Lekki – Epe Expy, Victoria Island, Lagos</span>
+          <span class="venue">Ibadan - The Premier Hotel, 9 Onigegora St, Mokola Hill, Ibadan.</span>
+        </div>
+      </div>
+    </section>
+    <section class="programs dark-tiles text-white">
+      <div class="container-md">
+        <h2 class="section-heading short-underline">Main Program</h2>
+        <div class="d-md-flex flex-nowrap">
+          <article class="position-relative programs-article">
+            <div class="cover dim"></div>
+            <div class="d-flex flex-md-column align-items-center">
+              <h3 class="text-primary heading">Lecture</h3>
+              <img class="icon" alt="lecture" src="assets/images/lecture.png">
+              <p class="body">Listen to the speakers from various countries about the message of sharing and opening</p>
+            </div>
+          </article>
+          <article class="position-relative programs-article">
+            <div class="cover dim"></div>
+            <div class="d-flex d-dm-block flex-md-column align-items-center">
+              <h3 class="text-primary heading">CC Exhibition</h3>
+              <img class="icon" alt="exhibition" src="assets/images/exhibition.png">
+              <p class="body">Listen to the speakers from various countries about the message of sharing and opening</p>
+            </div>
+          </article>
+          <article class="position-relative programs-article">
+            <div class="cover dim"></div>
+            <div class="d-flex d-dm-block flex-md-column align-items-center">
+              <h3 class="text-primary heading">Forum</h3>
+              <img class="icon" alt="forum" src="assets/images/forum.png">
+              <p class="body">Listen to the speakers from various countries about the message of sharing and opening</p>
+            </div>
+          </article>
+          <article class="position-relative programs-article">
+            <div class="cover dim"></div>
+            <div class="d-flex d-dm-block flex-md-column align-items-center">
+              <h3 class="text-primary heading">Workshop</h3>
+              <img class="icon" alt="workshop" src="assets/images/workshop.png">
+              <p class="body">Listen to the speakers from various countries about the message of sharing and opening</p>
+            </div>
+          </article>
+          <article class="position-relative programs-article">
+            <div class="cover dim"></div>
+            <div class="d-flex d-dm-block flex-md-column align-items-center">
+              <h3 class="text-primary heading">CC Ignite</h3>
+              <img class="icon" alt="ignite" src="assets/images/ignite.png">
+              <p class="body">Listen to the speakers from various countries about the message of sharing and opening</p>
+            </div>
+          </article>
+        </div>
+        <div class="section-footer">
+          <a class="text-secondary hover-primary d-none d-md-block link" href="#">See The Whole Program</a>
+          <button class="btn text-white bg-primary d-md-none">Join CC Global Summit 2015</button>
+        </div>
+      </div>
+    </section>
+    <section class="speakers" id="home-speakers">
+      <div class="container-md">
+        <h2 class="section-heading text-dark short-underline">Featured Speakers</h2>
+        <div class="section-body">
+          <article class="d-flex speakers-article order-1">
+            <div class="position-relative img-wrap">
+              <div class="sudoku-bg position-absolute"></div>
+              <img class="thumbnail" alt="speaker" src="assets/images/kc.png">
+            </div>
+            <div class="body">
+              <h3 class="heading">Ezeh KC.</h3>
+              <p class="p1 text-primary">
+                Berkman Professor of Entrepreneurial Legal Studies at Havard Law School
+              </p>
+              <p class="p2 text-muted">
+                Benler studies commons-based peer production and published his seminal book The Wealth of Networks in 2006
+              </p>
+            </div>
+          </article>
+          <article class="d-flex speakers-article order-3">
+            <div class="position-relative img-wrap">
+              <div class="sudoku-bg position-absolute"></div>
+              <img class="thumbnail" alt="speaker" src="assets/images/juliana.jpg">
+            </div>
+            <div class="body">
+              <h3 class="heading">Juliana Osemeke</h3>
+              <p class="p1 text-primary">
+                Director of Art Centre Nobi and a board member of CC Korea
+              </p>
+              <p class="p2 text-muted">
+                As the main venue for new media art production in Korea, Nobi promotes cross disciplinary collaboration and understanding among science technology, humanities and the arts.
+              </p>
+            </div>
+          </article>
+          <article class="d-flex speakers-article more order-2">
+            <div class="position-relative img-wrap">
+              <div class="sudoku-bg position-absolute"></div>
+              <img class="thumbnail" alt="speaker" src="assets/images/zil.jpg">
+            </div>
+            <div class="body">
+              <h3 class="heading">Zil Norvilis</h3>
+              <p class="p1 text-primary">
+                Berkman Professor of Entrepreneurial Legal Studies at Havard Law School
+              </p>
+              <p class="p2 text-muted">
+                Benler studies commons-based peer production and published his seminal book The Wealth of Networks in 2006
+              </p>
+            </div>
+          </article>
+          <article class="d-flex speakers-article more order-4">
+            <div class="position-relative img-wrap">
+              <div class="sudoku-bg position-absolute"></div>
+              <img class="thumbnail" alt="speaker" src="assets/images/duncan.jpg">
+            </div>
+            <div class="body">
+              <h3 class="heading">Duncan Kipkosgei Moiyo</h3>
+              <p class="p1 text-primary">
+                Berkman Professor of Entrepreneurial Legal Studies at Havard Law School
+              </p>
+              <p class="p2 text-muted">
+                Benler studies commons-based peer production and published his seminal book The Wealth of Networks in 2006
+              </p>
+            </div>
+          </article>
+          <article class="d-flex speakers-article more order-3">
+            <div class="position-relative img-wrap">
+              <div class="sudoku-bg position-absolute"></div>
+              <img class="thumbnail" alt="speaker" src="assets/images/sam.png">
+            </div>
+            <div class="body">
+              <h3 class="heading">Samrood Ali</h3>
+              <p class="p1 text-primary">
+                Berkman Professor of Entrepreneurial Legal Studies at Havard Law School
+              </p>
+              <p class="p2 text-muted">
+                Benler studies commons-based peer production and published his seminal book The Wealth of Networks in 2006
+              </p>
+            </div>
+          </article>
+          <article class="d-flex speakers-article more order-6">
+            <div class="position-relative img-wrap">
+              <div class="sudoku-bg position-absolute"></div>
+              <img class="thumbnail" alt="speaker" src="assets/images/doye.png">
+            </div>
+            <div class="body">
+              <h3 class="heading">Olaoluwa Soladoye</h3>
+              <p class="p1 text-primary">
+                Berkman Professor of Entrepreneurial Legal Studies at Havard Law School
+              </p>
+              <p class="p2 text-muted">
+                Benler studies commons-based peer production and published his seminal book The Wealth of Networks in 2006
+              </p>
+            </div>
+          </article>
+        </div>
+        <button class="btn bg-white" id="home-speakers-more-btn">
+          <span>More</span>
+        </button>
+      </div>
+    </section>
+    <section class="partners bg-dark">
+      <div class="container-md">
+        <h2 class="section-heading text-white short-underline">
+          Partner
+        </h2>
+        <ul class="d-flex flex-wrap flex-md-nowrap text-secondary justify-content-md-between justify-content-center partners-menu">
+          <li class="item"><a class="mozilla" href="#">mozilla</a></li>
+          <li class="item google"><a class="google" href="#">Google</a></li>
+          <li class="item"><a class="naver" href="#">NAVER</a></li>
+          <li class="item"><a class="daumkakao" href="#">daumkakao</a></li>
+          <li class="item"><a class="airbnb" href="#">airbnb</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <div class="container-md">
+      <div class="content d-flex align-items-center">
+        <a href="/" class="logo-link">
+          <img alt="logo" src="assets/images/lekside.jpg">
+        </a>
+        <div>
+          <p>2021 Lagos International Education Fair. Some Rights Reserved</p>
+          <p class="d-none d-md-block p2">62A Opebi Road Ikeja Lagos, Nigeria. Website: <a href="https://lekside.com/"><b class="text-dark">lekside.com</b></a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

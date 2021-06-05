@@ -1,0 +1,63 @@
+.hamburger {
+  position: relative;
+  outline: none;
+  border: none;
+  width: 32px;
+  height: 32px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.hamburger > span {
+  display: block;
+  position: absolute;
+  width: 32px;
+  height: 8px;
+  background-color: #272a31;
+  left: 0;
+  top: 12px;
+  transition: all 0.5s ease-in-out;
+}
+
+.hamburger::before {
+  content: "";
+  position: absolute;
+  width: 32px;
+  height: 8px;
+  background-color: #272a31;
+  left: 0;
+  top: 0;
+  transform-origin: center;
+  transition: top 0.3s 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.hamburger::after {
+  content: "";
+  position: absolute;
+  width: 32px;
+  height: 8px;
+  background-color: #272a31;
+  left: 0;
+  bottom: 0;
+  transform-origin: center;
+  transition: bottom 0.3s 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.hamburger.open > span {
+  opacity: 0;
+  background-color: transparent;
+}
+
+.hamburger.open::before {
+  top: 12px;
+  background-color: #ec5242;
+  transform: rotate(-45deg);
+  transition: all 0.3s ease-in-out, transform 0.3s 0.3s ease-in-out;
+}
+
+.hamburger.open::after {
+  bottom: 12px;
+  background-color: #ec5242;
+  transform: rotate(45deg);
+  transition: all 0.3s ease-in-out, transform 0.3s 0.3s ease-in-out;
+}
